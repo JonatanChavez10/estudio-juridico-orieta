@@ -1,0 +1,67 @@
+/* Estilos personalizados para complementar Bootstrap */
+:root {
+    --color-dorado: #d4af37;
+}
+
+/* Logo tipográfico */
+.navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar{
+    background-color: #000080;
+}
+
+header .btn{
+    color: #000080;
+}
+
+
+.logo-orieta {
+    color: var(--color-dorado) !important;
+    font-weight: bold;
+}
+
+/* Hero Section (Pantalla dividida) */
+.hero-section {
+    min-height: 80vh;
+}
+
+.hero-img {
+    background-image: url('../imagenes/Abogada_Sabrina.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 20px solid #212529;
+    /* Borde oscuro conectando con el menú */
+    min-height: 400px;
+    /* Para móviles */
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+/* Botón personalizado dorado */
+.btn-dorado {
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-dorado:hover {
+    background-color: #b5952f;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Iconos de servicios */
+.icono-servicio {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

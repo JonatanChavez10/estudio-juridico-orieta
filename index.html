@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Jurídico Orieta</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png">
+</head>
+
+<body id="Inicio">
+
+    <!-- MENÚ SUPERIOR (Fondo oscuro según consejos de UX/UI) -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow">
+        <div class="container">
+            <a>
+                <img src="imagenes/icono.png" alt="Imagen de la abogada Orieta" class="m-1" style="width: 100px;">
+            </a>
+            <a class="navbar-brand fs-5 text-warning" href="#">
+                ESTUDIO JURÍDICO <br> <span class="logo-orieta">ORIETA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="nav-link  active text-warning" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="#sobre-nosotros">Sobre el Estudio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Pantalla Dividida) -->
+    <header class="container-fluid">
+        <div class="row hero-section">
+            <!-- Izquierda: Imagen (Ocupa 6 columnas en compu, 12 en celular) -->
+            <div class="col-lg-6 col-12 hero-img"></div>
+
+            <!-- Derecha: Texto (Ocupa 6 columnas en compu, 12 en celular) -->
+            <div class="col-lg-6 col-12 hero-text-container bg-white">
+                <h1 class="display-4 fw-bold text-dark mb-4">Cercanía, claridad y apoyo constante.</h1>
+                <p class="lead text-muted mb-5">Te acompaño en la resolución de tus conflictos legales con la seguridad
+                    que dan más de 15 años de experiencia. Un espacio de escucha, asesoramiento transparente y defensa
+                    firme pensado exclusivamente para proteger lo que más te importa.</p>
+                <div>
+                    <a href="#contacto" class="btn btn-warning btn-lg shadow-sm">Solicitar Consulta Inicial</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN: ÁREAS DE PRÁCTICA -->
+    <section id="servicios" class="container py-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Nuestras Áreas de Práctica</h2>
+            <p class="text-muted">Especialistas comprometidos con la resolución de sus conflictos.</p>
+        </div>
+
+        <div class="row g-4 text-center">
+            <div class="col-md-3">
+                <div class="card h-100 border-1 shadow-sm p-4">
+                    <i class="bi bi-house-heart icono-servicio text-warning"></i>
+                    <h4 class="fw-bold">Derecho de Familia</h4>
+                    <p class="text-muted">Asesoramiento integral en divorcios, régimen de comunicación, alimentos y
+                        sucesiones familiares.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-1 shadow-sm p-4">
+                    <i class="bi bi-briefcase icono-servicio text-warning"></i>
+                    <h4 class="fw-bold">Derecho Laboral</h4>
+                    <p class="text-muted">Defensa en despidos, accidentes de trabajo y reclamos salariales. Protegemos
+                        sus derechos laborales.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-1 shadow-sm p-4">
+                    <i class="bi bi-buildings icono-servicio text-warning"></i>
+                    <h4 class="fw-bold">Derecho Comercial</h4>
+                    <p class="text-muted">Constitución de sociedades, redacción de contratos y asesoría preventiva para
+                        empresas y emprendedores.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-1 shadow-sm p-4">
+                    <i class="bi bi-person-heart icono-servicio text-warning"></i>
+                    <h4 class="fw-bold">Derecho Previsional</h4>
+                    <p class="text-muted">Asesoramiento integral en divorcios, régimen de comunicación, alimentos y
+                        sucesiones familiares.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: TESTIMONIOS (Prueba Social) -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Lo que dicen nuestros clientes</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <figure>
+                        <blockquote class="blockquote fs-4 fst-italic">
+                            <p>"El trato humano y la claridad con la que me explicaron mi caso me dieron mucha
+                                tranquilidad. Su profesionalismo es impecable."</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-3 fs-5">
+                            María L., <cite title="Source Title">Clienta de Derecho de Familia</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CONTACTO -->
+    <section id="contacto" class="container py-5 my-5">
+        <div class="row bg-white shadow rounded-4 overflow-hidden">
+            <div class="col-md-6 p-5 bg-dark text-white">
+                <h3 class="fw-bold mb-4">Información de Contacto</h3>
+                <p class="mb-4">Complete el formulario o comuníquese directamente a través de nuestros canales de
+                    atención.</p>
+
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Oficina en Cuartel V, Buenos
+                        Aires</li>
+                    <li class="mb-3"><i class="bi bi-telephone-fill text-warning me-2"></i> +54 9 11 5101-7232</li>
+                    <li class="mb-3"><i class="bi bi-envelope-fill text-warning me-2"></i> sabrinajorieta@gmail.com
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/5491151017232" class="btn btn-success mt-3"><i class="bi bi-whatsapp me-2"></i>Contactar por WhatsApp</a>
+            </div>
+
+            <div class="col-md-6 p-5">
+                <h3 class="fw-bold mb-4">Envíenos su consulta</h3>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" placeholder="Ej: Juan Pérez">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Correo Electrónico o Teléfono</label>
+                        <input type="text" class="form-control" placeholder="Para contactarlo">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Resumen de su caso</label>
+                        <textarea class="form-control" rows="4"
+                            placeholder="Describa brevemente su situación..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dorado w-100">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer>
+    <!-- El contenedor principal del footer. Usamos bg-dark para fondo oscuro y text-white para letras blancas -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+
+        <!-- Usamos container para que no se pegue a los bordes de la pantalla -->
+        <div class="container">
+
+            <!-- Fila principal de contenido -->
+            <div class="row">
+
+                <!-- COLUMNA 1: Información de la marca (ocupa 4 columnas en PC, 12 en móvil) -->
+                <div class="col-md-4 mb-4">
+                    <img src="imagenes/icono.png" alt="Icono Estudio Orieta" style="height: 180px;">
+                </div>
+
+                <!-- COLUMNA 2: Enlaces útiles (ocupa 4 columnas en PC) -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <!-- Lista sin viñetas de Bootstrap -->
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="tel:+5491151017232" class="text-white text-decoration-none "><i class="bi bi-telephone me-2"></i>Teléfono +54 9 1151017232</a><h6>Lunes a Viernes 9:00 a 18:00</h6></li>
+                        <li class="mb-3"><a href="https://wa.me/5491151017232" class="text-white text-decoration-none"><i class="bi bi-whatsapp me-2"></i>WhatsApp +54 9 1151017232</a><h6>Respuesta inmediata en menos de 24hs.</h6></li>
+                        <li class="mb-3"><a href="mailto:sabrinajorieta@gmail.com" class="text-white text-decoration-none"><i class="bi bi-envelope me-2"></i>Email sabrinajorieta@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUMNA 3: Suscripción o Contacto (ocupa 4 columnas en PC) -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Boletín</h5>
+                    <p class="text-muted">Suscríbete para recibir novedades.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Tu correo">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                </div>
+
+            </div> <!-- Fin de la fila principal -->
+
+            <!-- Línea divisoria sutil -->
+            <hr class="border-secondary">
+
+            <!-- ÁREA LEGAL: Derechos de autor y redes -->
+            <div class="row align-items-center">
+                <div class="col text-center text-md-center">
+                    <small class="text-light">© 2026 Estudio Jurídico Orieta. Todos los derechos reservados.</small>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</footer>
+
+</html>
