@@ -53,13 +53,6 @@ header .btn{
     padding: 12px 30px;
     transition: all 0.3s ease;
 }
-
-.btn-dorado:hover {
-    background-color: #b5952f;
-    color: #fff;
-    transform: translateY(-2px);
-}
-
 /* Iconos de servicios */
 .icono-servicio {
     font-size: 3rem;
