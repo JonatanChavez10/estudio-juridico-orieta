@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav text-center"> <!-- text-center ayuda a centrar los links en móvil -->
                     <li class="nav-item">
-                        <a class="nav-link active text-warning" href="#">Inicio</a>
+                        <a class="nav-link text-warning" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-warning" href="#sobre-nosotros">Sobre el Estudio</a>
@@ -56,19 +56,20 @@
     </nav>
 
     <!-- HERO SECTION (Pantalla Dividida) -->
-    <header class="container-fluid">
-        <div class="row hero-section">
+    <header class="container-fluid bg-light border-bottom">
+        <div class="row hero-section align-items-stretch">
             <!-- Izquierda: Imagen (Ocupa 6 columnas en compu, 12 en celular) -->
             <div class="col-lg-6 col-12 hero-img"></div>
 
             <!-- Derecha: Texto (Ocupa 6 columnas en compu, 12 en celular) -->
-            <div class="col-lg-6 col-12 hero-text-container bg-white">
+            <div class="col-lg-6 col-12 hero-text-container bg-light">
                 <h1 class="display-4 fw-bold text-dark mb-4">Cercanía, claridad y apoyo constante.</h1>
-                <p class="lead text-muted mb-5">Te acompaño en la resolución de tus conflictos legales con la seguridad
+                <p class="lead text-secondary mb-5">Te acompaño en la resolución de tus conflictos legales con la
+                    seguridad
                     que dan más de 15 años de experiencia. Un espacio de escucha, asesoramiento transparente y defensa
                     firme pensado exclusivamente para proteger lo que más te importa.</p>
                 <div>
-                    <a href="#contacto" class="btn btn-warning btn-lg shadow-sm">Solicitar Consulta Inicial</a>
+                    <a href="#contacto" class="btn-dorado shadow-sm text-decoration-none">Solicitar Consulta Inicial</a>
                 </div>
             </div>
         </div>
@@ -159,21 +160,29 @@
 
             <div class="col-md-6 p-5">
                 <h3 class="fw-bold mb-4">Envíenos su consulta</h3>
-                <form>
+                <form action="https://formspree.io/f/xzdnjnjk" method="POST">
+                    <input type="hidden" name="_next"
+                        value="https://jonatanchavez10.github.io/estudio-juridico-orieta/">
+
                     <div class="mb-3">
-                        <label class="form-label">Nombre Completo</label>
-                        <input type="text" class="form-control" placeholder="Ej: Juan Pérez">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez"
+                            required>
                     </div>
+
                     <div class="mb-3">
-                        <label class="form-label">Correo Electrónico o Teléfono</label>
-                        <input type="text" class="form-control" placeholder="Para contactarlo">
+                        <label for="contacto" class="form-label">Correo Electrónico o Teléfono</label>
+                        <input type="text" class="form-control" id="contacto" name="contacto"
+                            placeholder="Para contactarlo" required>
                     </div>
+
                     <div class="mb-4">
-                        <label class="form-label">Resumen de su caso</label>
-                        <textarea class="form-control" rows="4"
-                            placeholder="Describa brevemente su situación..."></textarea>
+                        <label for="mensaje" class="form-label">Resumen de su caso</label>
+                        <textarea class="form-control" rows="4" id="mensaje" name="mensaje"
+                            placeholder="Describa brevemente su situación..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-warning w-100">Enviar Mensaje</button>
+
+                    <button type="submit" class="btn-dorado shadow-sm text-decoration-none">Enviar Mensaje</button>
                 </form>
             </div>
         </div>
@@ -225,14 +234,14 @@
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none "><i
                                     class="bi bi-facebook me-2" id="facebook"></i>facebook</a>
                         </li>
-                        <li class="mb-2"><a href="#"
-                                class="text-white text-decoration-none"><i class="bi bi-twitter-x me-2" id="twitter"></i>Twitter</a>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i
+                                    class="bi bi-twitter-x me-2" id="twitter"></i>Twitter</a>
                         </li>
-                        <li class="mb-2"><a href="#"
-                                class="text-white text-decoration-none"><i class="bi bi-youtube me-2" id="youtube"></i>Youtube</a>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i
+                                    class="bi bi-youtube me-2" id="youtube"></i>Youtube</a>
                         </li>
-                        <li class="mb-2"><a href="#"
-                                class="text-white text-decoration-none"><i class="bi bi-instagram me-2" id="instagram"></i>Instagram</a>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i
+                                    class="bi bi-instagram me-2" id="instagram"></i>Instagram</a>
                         </li>
                     </ul>
                 </div>

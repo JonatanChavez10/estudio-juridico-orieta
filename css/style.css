@@ -1,33 +1,22 @@
 /* Estilos personalizados para complementar Bootstrap */
+/* =========================================
+   1. VARIABLES Y GLOBALES
+   ========================================= */
 :root {
     --color-dorado: #d4af37;
 }
 
-/* Logo tipográfico */
+/* =========================================
+   2. COMPONENTES: NAVEGACIÓN (Navbar)
+   ========================================= */
+.navbar {
+    background-color: #000080;
+}
+
 .navbar-brand {
     font-family: 'Georgia', serif;
     font-size: 1.5rem;
     letter-spacing: 1px;
-}
-
-.navbar{
-    background-color: #000080;
-}
-/*revisar esto mañana*/
-.navbar a:hover{
-    transition: 2s ease;
-    transform: rotateX(360deg);
-}
-
-
-header .btn:hover{
-    color: #FFD32C;
-    background-color: #000080;
-}
-
-form .btn:hover{
-    color: #FFD32C;
-    background-color: #000080;
 }
 
 .logo-orieta {
@@ -35,7 +24,30 @@ form .btn:hover{
     font-weight: bold;
 }
 
-/* Hero Section (Pantalla dividida) */
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 2px;
+    left: 50%;
+    background-color: #ffc107;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* =========================================
+   3. COMPONENTES: HERO SECTION
+   ========================================= */
 .hero-section {
     min-height: 80vh;
 }
@@ -44,44 +56,105 @@ form .btn:hover{
     background-image: url('../imagenes/Abogada_Sabrina.jpeg');
     background-size: cover;
     background-position: center;
-    border-bottom: 20px solid #212529;
-    /* Borde oscuro conectando con el menú */
     min-height: 400px;
-    /* Para móviles */
 }
 
 .hero-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5%;
+    padding: 6% 8%;
 }
 
-/* Botón personalizado dorado */
+/* =========================================
+   4. COMPONENTES: BOTONES Y TARJETAS
+   ========================================= */
 .btn-dorado {
+    background-color: #ffc107;
+    color: #212529;
     font-weight: bold;
     border: none;
-    padding: 12px 30px;
+    padding: 14px 32px;
+    border-radius: 6px;
     transition: all 0.3s ease;
+    display: inline-block;
 }
-/* Iconos de servicios */
+
+.btn-dorado:active {
+    transform: scale(0.98); /* Efecto al presionar (para móviles y PC) */
+}
+
+.card {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Corregido 0.3s */
+}
+
 .icono-servicio {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-.card{
 
-    transition: border-color 0.3s ease, box-shadow 0.3 ease;
-
+/* =========================================
+   5. COMPONENTES: FOOTER / REDES SOCIALES
+   ========================================= */
+.list-unstyled i {
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.card:hover{
+/* =========================================
+   6. HOVER EFFECTS (Solo para dispositivos con mouse)
+   ========================================= */
+@media (hover: hover) {
+    /* Navbar Hovers */
+    .navbar-brand:hover img {
+        transform: scale(1.05);
+    }
+    
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+        width: 80%;
+    }
 
-    border-color: #ffc107 !important;
-    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4) !important;
+    /* Botones Hovers generales */
+    header .btn:hover,
+    form .btn:hover {
+        color: #FFD32C;
+        background-color: #000080;
+    }
 
+    .btn-dorado:hover {
+        background-color: #e0a800;
+        color: #000;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Cards Hovers */
+    .card:hover {
+        border-color: #ffc107 !important;
+        box-shadow: 0 0 15px rgba(255, 193, 7, 0.4) !important;
+    }
+
+    /* Redes Sociales Hovers */
+    a:hover #facebook { color: #1877F2 !important; }
+    a:hover #twitter  { color: #1DA1F2 !important; }
+    a:hover #youtube  { color: #FF0000 !important; }
+    a:hover #instagram{ color: #E4405F !important; }
 }
 
-#facebook:hover{
-    color: #1877F2;
+/* =========================================
+   7. MEDIA QUERIES RESPONSIVE (Celulares y Tablets)
+   ========================================= */
+@media (max-width: 991.88px) {
+    #navbarNav {
+        background-color: #000631;
+        border-radius: 12px;
+        padding: 15px;
+        margin-top: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 193, 7, 0.2);
+    }
+
+    #navbarNav .nav-item {
+        padding: 8px 0;
+    }
 }
