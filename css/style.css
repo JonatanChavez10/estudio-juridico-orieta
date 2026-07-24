@@ -13,11 +13,22 @@
 .navbar{
     background-color: #000080;
 }
-
-header .btn{
-    color: #000080;
+/*revisar esto mañana*/
+.navbar a:hover{
+    transition: 2s ease;
+    transform: rotateX(360deg);
 }
 
+
+header .btn:hover{
+    color: #FFD32C;
+    background-color: #000080;
+}
+
+form .btn:hover{
+    color: #FFD32C;
+    background-color: #000080;
+}
 
 .logo-orieta {
     color: var(--color-dorado) !important;
@@ -57,4 +68,20 @@ header .btn{
 .icono-servicio {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+.card{
+
+    transition: border-color 0.3s ease, box-shadow 0.3 ease;
+
+}
+
+.card:hover{
+
+    border-color: #ffc107 !important;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4) !important;
+
+}
+
+#facebook:hover{
+    color: #1877F2;
 }
