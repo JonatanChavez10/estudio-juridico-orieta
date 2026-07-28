@@ -41,7 +41,7 @@
                         <a class="nav-link text-warning" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="#sobre-nosotros">Sobre el Estudio</a>
+                        <a class="nav-link text-warning" href="#sobre-nosotros">Conoce a la Dra. Sabrina Orieta</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-warning" href="#servicios">Servicios</a>
@@ -56,22 +56,32 @@
     </nav>
 
     <!-- HERO SECTION (Pantalla Dividida) -->
-    <header class="container-fluid bg-light border-bottom">
-        <div class="row hero-section align-items-stretch">
-            <!-- Izquierda: Imagen (Ocupa 6 columnas en compu, 12 en celular) -->
-            <div class="col-lg-6 col-12 hero-img"></div>
-
-            <!-- Derecha: Texto (Ocupa 6 columnas en compu, 12 en celular) -->
-            <div class="col-lg-6 col-12 hero-text-container bg-light">
-                <h1 class="display-4 fw-bold text-dark mb-4">Cercanía, claridad y apoyo constante.</h1>
-                <p class="lead text-secondary mb-5">Te acompaño en la resolución de tus conflictos legales con la
-                    seguridad
-                    que dan más de 15 años de experiencia. Un espacio de escucha, asesoramiento transparente y defensa
-                    firme pensado exclusivamente para proteger lo que más te importa.</p>
-                <div>
-                    <a href="#contacto" class="btn-dorado shadow-sm text-decoration-none">Solicitar Consulta Inicial</a>
+    <header class="container-fluid bg-light border-bottom d-flex">
+        <div id="carouselExampleSlidesOnly" class="carousel slide col-lg-6 col-12" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/Abogada_Sabrina.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Carrusel1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/Carrusel2.jpeg" class="d-block w-100" alt="...">
                 </div>
             </div>
+        </div>
+
+        <!-- Derecha: Texto (Ocupa 6 columnas en compu, 12 en celular) -->
+        <div class="col-lg-6 col-12 hero-text-container bg-light">
+            <h1 class="display-4 fw-bold text-dark mb-4">Cercanía, claridad y apoyo constante.</h1>
+            <p class="lead text-secondary mb-5">Te acompaño en la resolución de tus conflictos legales con la
+                seguridad
+                que dan más de 15 años de experiencia. Un espacio de escucha, asesoramiento transparente y defensa
+                firme pensado exclusivamente para proteger lo que más te importa.</p>
+            <div>
+                <a href="#contacto" class="btn-dorado shadow-sm text-decoration-none">Solicitar Consulta Inicial</a>
+            </div>
+        </div>
         </div>
     </header>
 
@@ -117,7 +127,57 @@
             </div>
         </div>
     </section>
+    <!-- SECCIÓN: Conoce a la Dra Sabrina Orieta -->
+    <section>
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- Columna de la Imagen -->
+                <div class="col-12 col-lg-6 text-center">
+                    <img class="img-fluid rounded shadow" src="imagenes/Sobre_Dr_Orieta.jpeg"
+                        alt="Imagen de la Dra. Sabrina Orieta">
+                </div>
 
+                <!-- Columna del Texto con fondo crema -->
+                <div class="col-12 col-lg-6">
+                    <div class="Parrafo_sobre_Dra_SO p-4 p-lg-5 rounded shadow-sm position-relative">
+                        <span
+                            class="position-absolute top-1 start-0 translate-middle-y text-dark opacity-50 display-1 fw-bold"
+                            style="font-family: serif; z-index: 0;">“</span>
+                        <p class="mb-3">
+                            Elegí esta profesión porque creo que el derecho debe ser una herramienta para ayudar a las
+                            personas a resolver sus problemas y proteger aquello que más valoran. A lo largo de mi
+                            trayectoria entendí que, además del conocimiento jurídico, las personas necesitan ser
+                            escuchadas, comprendidas y acompañadas.
+                        </p>
+                        <p class="mb-3">
+                            Por eso, mi forma de ejercer la abogacía se basa en un trato cercano, una comunicación clara
+                            y
+                            un compromiso genuino con cada caso. Me gusta que quienes me consultan comprendan sus
+                            opciones y
+                            puedan tomar decisiones con tranquilidad, sin tecnicismos innecesarios ni falsas
+                            expectativas.
+                        </p>
+                        <p class="mb-3">
+                            Cada persona y cada situación son diferentes. Por eso brindo un asesoramiento personalizado,
+                            dedicando el tiempo necesario para entender cada caso y buscar la mejor estrategia jurídica
+                            posible.
+                        </p>
+                        <p class="mb-0">
+                            Mi objetivo es que, desde el primer contacto, encuentres no solo una abogada que defienda
+                            tus
+                            derechos, sino también alguien que te acompañe con profesionalismo, honestidad y respeto
+                            durante
+                            todo el proceso.
+                        </p>
+                        <span
+                            class="position-absolute bottom-0 end-0 translate-middle-x text-dark opacity-50 display-1 fw-bold"
+                            style="font-family: serif; z-index: 0; line-height: 0;">”</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- SECCIÓN: TESTIMONIOS (Prueba Social) -->
     <section class="bg-light py-5">
         <div class="container text-center">
@@ -147,8 +207,6 @@
                     atención.</p>
 
                 <ul class="list-unstyled">
-                    <li class="mb-3"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Oficina en Cuartel V, Buenos
-                        Aires</li>
                     <li class="mb-3"><i class="bi bi-telephone-fill text-warning me-2"></i> +54 9 11 5101-7232</li>
                     <li class="mb-3"><i class="bi bi-envelope-fill text-warning me-2"></i> sabrinajorieta@gmail.com
                     </li>
@@ -212,16 +270,18 @@
                     <!-- Lista sin viñetas de Bootstrap -->
                     <ul class="list-unstyled">
                         <li class="mb-3"><a href="tel:+5491151017232" class="text-white text-decoration-none "><i
-                                    class="bi bi-telephone me-2"></i>Teléfono +54 9 1151017232</a>
+                                    class="bi bi-telephone me-2" id="iconoTelefono"></i>Teléfono +54 9 1151017232</a>
                             <h6>Lunes a Viernes 9:00 a 18:00</h6>
                         </li>
                         <li class="mb-3"><a href="https://wa.me/5491151017232"
-                                class="text-white text-decoration-none"><i class="bi bi-whatsapp me-2"></i>WhatsApp +54
+                                class="text-white text-decoration-none"><i class="bi bi-whatsapp me-2"
+                                    id="iconoWhatsapp"></i>WhatsApp +54
                                 9 1151017232</a>
                             <h6>Respuesta inmediata en menos de 24hs.</h6>
                         </li>
                         <li class="mb-3"><a href="mailto:sabrinajorieta@gmail.com"
-                                class="text-white text-decoration-none"><i class="bi bi-envelope me-2"></i>Email
+                                class="text-white text-decoration-none"><i class="bi bi-envelope me-2"
+                                    id="iconoMail"></i>Email
                                 sabrinajorieta@gmail.com</a></li>
                     </ul>
                 </div>

@@ -52,18 +52,16 @@
     min-height: 80vh;
 }
 
-.hero-img {
-    background-image: url('../imagenes/Abogada_Sabrina.jpeg');
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-}
+
 
 .hero-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 6% 8%;
+}
+.Parrafo_sobre_Dra_SO{
+    background-color: #EDE8D0;
 }
 
 /* =========================================
@@ -139,6 +137,9 @@
     a:hover #twitter  { color: #1DA1F2 !important; }
     a:hover #youtube  { color: #FF0000 !important; }
     a:hover #instagram{ color: #E4405F !important; }
+    a:hover #iconoTelefono{ color: #2563EB !important; }
+    a:hover #iconoMail{ color: #EA4335 !important; }
+    a:hover #iconoWhatsapp{ color: #25D366 !important; }
 }
 
 /* =========================================
